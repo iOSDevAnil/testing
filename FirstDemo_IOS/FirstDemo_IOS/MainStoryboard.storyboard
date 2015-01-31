@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="178">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--First DemoIOS View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FirstDemo_IOSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qCH-7Y-1vp"/>
+                        <viewControllerLayoutGuide type="bottom" id="48m-ap-8KP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="15" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="31" width="375" height="636"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="16" reuseIdentifier="Cell">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="17" tableViewCell="16">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue id="151" destination="111" kind="push"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0" blue="1" alpha="1"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="15" id="name-outlet-15"/>
+                    </connections>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem title="Fruits" id="101" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="53"/>
+        </scene>
+        <scene sceneID="55">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="56" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="59">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="102" destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="43"/>
+        </scene>
+        <scene sceneID="110">
+            <objects>
+                <viewController id="111" sceneMemberID="viewController" customClass="Detail">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="108"/>
+                        <viewControllerLayoutGuide type="bottom" id="109"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="112">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="153" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="83" y="124" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lblFruit" destination="153" id="name-outlet-153"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="113" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="799"/>
+        </scene>
+        <scene sceneID="177">
+            <objects>
+                <viewController id="178" sceneMemberID="viewController" customClass="RegistrationVC">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="175"/>
+                        <viewControllerLayoutGuide type="bottom" id="176"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="179">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" minimumFontSize="17" id="182" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Firstname" alpha="0.5" borderStyle="line">
+                                <rect key="frame" x="20" y="58" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="line" minimumFontSize="17" id="184" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Lastname" alpha="0.5">
+                                <rect key="frame" x="20" y="108" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="line" minimumFontSize="17" id="185" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" alpha="0.5">
+                                <rect key="frame" x="20" y="206" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="line" minimumFontSize="17" id="186" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Username" alpha="0.5">
+                                <rect key="frame" x="20" y="157" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="line" minimumFontSize="17" id="187" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Conform Password" alpha="0.5">
+                                <rect key="frame" x="20" y="256" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="188" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="0.5">
+                                <rect key="frame" x="20" y="300" width="335" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6" green="0.4" blue="0.2" alpha="1"/>
+                                <state key="normal" title="Choose a Date">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSelectDate_TouchUpInside:" destination="178" id="197" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="195" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="0.6">
+                                <rect key="frame" x="232" y="350" width="123" height="32"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0" blue="0.49803921568627452" alpha="1"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSubmit_TouchUpInside:" destination="178" id="196" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="txtFirstname" destination="182" id="name-outlet-182"/>
+                        <outlet property="txtLastname" destination="184" id="name-outlet-184"/>
+                        <outlet property="txtUsername" destination="186" id="name-outlet-186"/>
+                        <outlet property="txtPassword" destination="185" id="name-outlet-185"/>
+                        <outlet property="txtCPassword" destination="187" id="name-outlet-187"/>
+                        <outlet property="btnSelectDate" destination="188" id="name-outlet-188"/>
+                        <outlet property="btnSubmit" destination="195" id="name-outlet-195"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="180" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="47"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="Default-Landscape.png" width="1024" height="748"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="icon-29.png" width="29" height="29"/>
+        <image name="icon-50.png" width="50" height="50"/>
+        <image name="icon-57.png" width="57" height="57"/>
+        <image name="icon-58.png" width="58" height="58"/>
+        <image name="icon-72.png" width="72" height="72"/>
+        <image name="icon-100.png" width="100" height="100"/>
+        <image name="icon-114.png" width="114" height="114"/>
+        <image name="icon-144.png" width="144" height="144"/>
+    </resources>
+</document>

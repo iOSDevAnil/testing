@@ -1,0 +1,31 @@
+# Version: 8.6.0.51 (dfb682f)
+# [first argument, ignore] # /Users/hariwepuri/Documents/Projects/TestCI/FirstDemo_IOS/FirstDemo_IOS/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.0.51/bin/mtouch-64 \
+	--cache \
+	/Users/hariwepuri/Documents/Projects/TestCI/FirstDemo_IOS/FirstDemo_IOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--sim \
+	/Users/hariwepuri/Documents/Projects/TestCI/FirstDemo_IOS/FirstDemo_IOS/bin/iPhoneSimulator/Debug/FirstDemo_IOS.app \
+	--executable \
+	FirstDemo_IOS \
+	--debug \
+	--nolink \
+	--sdkroot \
+	"/Applications/Xcode 6.1.app/Contents/Developer" \
+	--sdk \
+	8.1 \
+	--targetver \
+	8.0 \
+	--abi=i386 \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.Dialog-1.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	/Users/hariwepuri/Documents/Projects/TestCI/FirstDemo_IOS/FirstDemo_IOS/bin/iPhoneSimulator/Debug//FirstDemo_IOS.exe \
